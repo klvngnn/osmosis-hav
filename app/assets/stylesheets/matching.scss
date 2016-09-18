@@ -4,7 +4,55 @@
 // @import "bootstrap-sprockets";
 // @import "bootstrap";
 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
 #wrapper {
-	width: 80%;
+	width: 60%;
 	margin: 0 auto;
+	padding-top: 15%;
+}
+
+.btn {
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 22px;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -o-transition: .3s;
+  display: inline-block;
+}
+
+.btn:hover {
+  cursor: url(http://cur.cursors-4u.net/symbols/sym-1/sym46.cur), auto;
+
+}
+
+.blue {
+  color: #55acee;
+  border: 2px #55acee solid !important;
+}
+
+.blue:hover {
+  background-color: #55acee;
+  color: #fff;
+}
+
+input[type="text"]
+{
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+
+.report-text {
+	font-size: 20px;
+}
+
+#describe-action {
+	width: 520px;
 }
