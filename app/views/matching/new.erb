@@ -6,23 +6,29 @@
 
 <div class="row text-center" id="wrapper">
 
-  <div class="row text-center">
-    <h1>Report Incident</h1>
-  </div>
+<div id="box">
+    <div id="text-solid">
+    <div class="row text-center">
 
-  <form>
-    <p class="report-text">I feel
-    <input type ="text" name="adj" placeholder="insert emotion">
-    when
-    <input type ="text" name="bully" placeholder="insert name">
-    does
-    </p>
-    <p class="report-text"><input type ="text" id="describe-action"name="description" placeholder="insert action">
-    to me</p>
-    <div class="match-button" type="submit">
-      <a id="subbutton" class="btn blue">Proceed to match</a>
+      <h1>REPORT INCIDENT</h1>
     </div>
-  </form>
+  
+    <form>
+  
+      <p class="report-text">I feel
+      <input type ="text" name="adj" placeholder="insert emotion">
+      when 
+      <input type ="text" name="bully" placeholder="insert name">
+      does
+      </p>
+      <p class="report-text"><input type ="text" id="describe-action"name="description" placeholder="insert action">
+      to me</p>
+      <div class="match-button" type="submit">
+        <a class="btn blue">Match</a>
+      </div>
+    </form>
+    </div>
+  </div>
 </div>
 
 
@@ -34,7 +40,7 @@
 
 
 
-<div id="wrapper" class="matched-result">
+<div class="matched-result">
   
   <%= @bully.name %>
   <% @bully.interests.each do |interest| %>

@@ -16,7 +16,12 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import 'https://fonts.googleapis.com/css?family=Raleway|Roboto';
 
 body {
-	 background-image: image-url("weather.png");
+	 background-image: image-url("school.jpg");
+	 background-size: 100%;
+	 font-family: 'Roboto', sans-serif;
+
+	
 }

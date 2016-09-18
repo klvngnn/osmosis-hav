@@ -10,12 +10,12 @@
 end
 
 interest1 = Interest.create({name: 'Drones'})
-interest2 = Interest.create({name: 'Cooking'})
-interest3 = Interest.create({name: 'Art'})
+# interest2 = Interest.create({name: 'Cooking'})
+# interest3 = Interest.create({name: 'Art'})
 interest4 = Interest.create({name: 'Basketball'})
-interest5 = Interest.create({name: 'Football'})
+# interest5 = Interest.create({name: 'Football'})
 
-array = [Interest.find(1), Interest.find(2), Interest.find(3), Interest.find(4), Interest.find(5)]
+array = [Interest.find(1), Interest.find(2)]
 interest1 = array.sample
 interest2 = array.sample
 
@@ -31,6 +31,3 @@ User.all.each do |user|
 end
 
 
-# ui1 = UserInterests.create({user_id: 1, interest_id: 2})
-# user2.interest =
-# interests =e
