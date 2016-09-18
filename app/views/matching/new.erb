@@ -1,32 +1,108 @@
 <div class="profile">
   <p id="username"><%=@user.name%></p>
 </div>
-  <img id="propic" class="" src="<%=@user.img_url%>">
+<img id="propic" class="" src="<%=@user.img_url%>">
 
 
 <div class="row text-center" id="wrapper">
 
-<div id="box">
+  <div id="box">
     <div id="text-solid">
-    <div class="row text-center">
+      <div class="row text-center">
 
-      <h1>REPORT INCIDENT</h1>
-    </div>
-  
-    <form>
-  
-      <p class="report-text">I feel
-      <input type ="text" name="adj" placeholder="insert emotion">
-      when 
-      <input type ="text" name="bully" placeholder="insert name">
-      does
-      </p>
-      <p class="report-text"><input type ="text" id="describe-action"name="description" placeholder="insert action">
-      to me</p>
-      <div class="match-button" type="submit">
-        <a class="btn blue">Match</a>
+        <h1>REPORT INCIDENT</h1>
       </div>
-    </form>
+
+      <form>
+
+        <p class="report-text">I feel
+          <input type ="text" name="adj" placeholder="insert emotion">
+          when 
+          <input type ="text" name="bully" placeholder="insert name">
+          does
+        </p>
+        <p class="report-text"><input type ="text" id="describe-action"name="description" placeholder="insert action">
+          to me</p>
+          <div id="subbutton" class="match-button" type="submit">
+            <a class="btn blue">Match</a>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
-</div>
+
+
+  <div id="box">
+    <div id="text-solid">
+      <div class="row">
+
+        <h1>Matched Students</h1>
+      </div>
+
+      <div id="user" class="matched-result">
+        <div class="person-wrapper">
+          <img class="" src="<%=@user.img_url%>">
+          <%= @user.name %> <br>
+          <%= @user.grade %> <br>
+          <% @user.interests.each do |interest| %>
+          <%= interest.name %> <br>
+          <% end %>
+        </div>
+        <div class="person-wrapper">
+          <img class="" src="<%=@match1.img_url%>">
+          <%= @match1.name %> <br>
+          <%= @match1.grade %> <br>
+          <% @match1.interests.each do |interest| %>
+          <%= interest.name %> <br>
+          <% end %>
+        </div>
+        <div class="person-wrapper">
+          <img class="" src="<%=@match2.img_url%>">
+          <%= @match2.name %> <br>
+          <%= @match2.grade %> <br>
+          <% @match2.interests.each do |interest| %>
+          <%= interest.name %> <br>
+          <% end %>
+        </div>
+      </div>
+
+
+      <div id="bully" class="matched-result">
+        <div class="person-wrapper">
+          <img class="" src="<%=@bully.img_url%>">
+          <%= @bully.name %> <br>
+          <%= @bully.grade %> <br>
+          <% @bully.interests.each do |interest| %>
+          <%= interest.name %> <br>
+          <% end %>
+        </div>
+
+        <div class="person-wrapper">
+          <img class="" src="<%=@match3.img_url%>">
+          <%= @match3.name %> <br>
+          <%= @match3.grade %> <br>
+          <% @match3.interests.each do |interest| %>
+          <%= interest.name %> <br>
+          <% end %>
+        </div>
+        <div class="person-wrapper">
+          <img class="" src="<%=@match4.img_url%>">
+          <%= @match4.name %> <br>
+          <%= @match4.grade %> <br>
+          <% @match4.interests.each do |interest| %>
+          <%= interest.name %> <br>
+          <% end %>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
