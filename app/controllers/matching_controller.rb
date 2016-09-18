@@ -1,11 +1,11 @@
 class MatchingController < ApplicationController
 	def index
 		@user = User.find(1)
-		render :new
-	end
+		@bully = User.find(2)
 
-	def new
-		@user = User.find(0)
+		
+
+		render :new
 	end
 
 end

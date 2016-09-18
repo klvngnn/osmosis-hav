@@ -11,17 +11,35 @@
   </div>
 
   <form>
-
     <p class="report-text">I feel
     <input type ="text" name="adj" placeholder="insert emotion">
-    when 
+    when
     <input type ="text" name="bully" placeholder="insert name">
     does
     </p>
     <p class="report-text"><input type ="text" id="describe-action"name="description" placeholder="insert action">
     to me</p>
     <div class="match-button" type="submit">
-      <a class="btn blue">Proceed to match</a>
+      <a id="subbutton" class="btn blue">Proceed to match</a>
     </div>
   </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div id="wrapper" class="matched-result">
+  
+  <%= @bully.name %>
+  <% @bully.interests.each do |interest| %>
+    <%= interest.name %>
+  <% end %>
+  <img class="" src="<%=@bully.img_url%>">
+
 </div>
