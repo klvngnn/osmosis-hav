@@ -14,7 +14,3 @@ user3 = User.create({name: 'Kelvin', grade: -1, img_url: '', teacher?: true})
 interest1 = Interest.create({name: 'Drones'})
 interest2 = Interest.create({name: 'Cooking'})
 interest3 = Interest.create({name: 'Lollipop Chainsaw'})
-
-# ui1 = UserInterests.create({user_id: 1, interest_id: 2})
-# user2.interest =
-# interests =e
