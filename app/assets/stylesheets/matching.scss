@@ -5,17 +5,26 @@
 // @import "bootstrap";
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import 'https://fonts.googleapis.com/css?family=Raleway';
 
 #wrapper {
 	width: 60%;
 	margin: 0 auto;
 	padding-top: 15%;
+
+}
+
+#box {
+	margin: 10px;
+	padding-bottom: 20px;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius:  15px;
 }
 
 .btn {
   cursor: pointer;
   margin: 10px;
-  border-radius: 5px;
+  border-radius: 2px;
   text-decoration: none;
   padding: 10px;
   font-size: 22px;
@@ -23,6 +32,7 @@
   -webkit-transition: .3s;
   -moz-transition: .3s;
   -o-transition: .3s;
+  width: 100px;
   display: inline-block;
 }
 
@@ -32,14 +42,19 @@
 }
 
 .blue {
-  color: #55acee;
-  border: 2px #55acee solid !important;
+  color: #fff;
+  background-color: #B293A3;
+  border: 2px #9D7D8D solid !important;
 }
 
 .blue:hover {
-  background-color: #55acee;
+  background-color: #fff;
   color: #fff;
 }
+
+
+
+
 
 input[type="text"]
 {
@@ -83,3 +98,9 @@ img {
 	border-radius: 50%;
 	border: 5px solid #000;
 }
+
+h1 {
+	font-weight: bold;
+	letter-spacing:2px;
+}
+
