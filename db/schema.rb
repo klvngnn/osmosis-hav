@@ -19,12 +19,8 @@ ActiveRecord::Schema.define(version: 20160917230651) do
   end
 
   create_table "user_interests", force: :cascade do |t|
-    t.integer  "user_id"
-    t.integer  "interest_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-    t.index ["interest_id"], name: "index_user_interests_on_interest_id"
-    t.index ["user_id"], name: "index_user_interests_on_user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
